@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Sans-serif;
+  font-size: 16px;
+  background: white;
+}
+
+.contenedor {
+  width: 90%;
+  overflow: hidden; 
+  margin-left: auto;
+  margin-right: auto;}
+
+header {
+  left: 0;
+  position: fixed;
+  background: rgb(8, 0, 0); }
+  header nav {
+    position: fixed;
+    background-color: black;
+    width: 100%; }
+    header nav ul {
+      list-style: none;
+      overflow: hidden; }
+      header nav ul .layfront {
+        font-size: 60px;
+        margin-left: 100px;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+      }
+      header nav ul .menu {
+        text-shadow: 2px 2px red;text-shadow: 2px 2px red;
+        margin-top: 25px;
+      }
+      header nav ul li {
+        float: left; }
+        header nav ul li a {
+          text-decoration: none;
+          color: rgb(250, 246, 246);
+          padding: 20px 20px; }
+          header nav ul li a:hover {
+            background: #000;
+            color: rgb(53, 32, 32); }
+.main {
+  padding: 10%;
+  padding-top: 10%;
+  width: 70%;
+  float: left;
+  background: #fff; }
+  .main .imagen {
+    width: 100%; }
+    .main .imagen img {
+      width: 100%;
+      vertical-align: top; }
+  .main .posts {
+    padding-top: 5%;
+    display: flex;
+    text-align: justify;
+    }
+
+    .main .posts .imagen:hover .overlay {
+      opacity: 1;
+    ;}
+    .main .posts .imagen {
+      position: relative;
+      width: 50%;
+    }
+    .main .posts .imagen .overlay {
+   position: absolute;
+   bottom: 0;
+   background:green (48, 9, 155, 0.5);
+   width: 100%;
+   transition: .5s ease;
+   opacity:0;
+   color: white;
+   font-size: 30px;
+   font-weight: bolder;
+   padding: 20px;
+   text-align: center;
+   font-family: 'Big Shoulders Stencil Display', cursive;
+   text-shadow: 2px 2px red;text-shadow: 2px 2px red;}
+
+    .main .posts .notice {
+      padding-left: 5%;}
+    .main .posts .notice .news {
+      color: red;
+      font-size: 15px;}
+      .main .posts .notice .title {
+        color: black;
+        font-size: 20px;}
+    .main .posts article p {
+      margin-bottom: 15px;
+      line-height: 27px; }
+aside {
+  text-align: justify;
+  padding-top: 10%;
+  width: 20%;
+  float: left;
+  background:white; 
+  color: black; }
+  aside .widget {
+    margin-bottom: 20px; }
+    aside .widget .titulo {
+      background-color: black;
+      font-family: 'Big Shoulders Stencil Display', cursive;
+      text-shadow: 2px 2px red;
+      font-size: 25px;
+      color:white;
+      border: 5px solid black;
+      margin-bottom: 10px; }
+    
+      aside .widget ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 0; }
+        aside .widget ul li a {
+          color: black;
+          text-decoration: none; }
+          aside .widget ul li a:hover {
+            color: #8f8f8f; }
+    aside .widget p {
+      line-height: 27px; }
+      
+footer {
+  width: 70%;
+  overflow: hidden;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 15px 0; }
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%; }
+
+  aside {
+    width: 100%; }
+
+  footer {
+    width: 100%; } }
+
+/*# sourceMappingURL=estilos.css.map */
